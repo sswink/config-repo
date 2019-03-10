@@ -9,7 +9,7 @@ spring:
 #  jpa:
 #    show-sql: true
 env:
-  dev
+  dev2
 # eureka:
 #   client:
 #     service-url:
