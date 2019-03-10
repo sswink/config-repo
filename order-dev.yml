@@ -14,3 +14,7 @@ env:
 #   client:
 #     service-url:
 #       defaultZone: http://localhost:8762/eureka/
+
+girl:
+  name: lili
+  age: 18
