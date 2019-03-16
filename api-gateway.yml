@@ -6,7 +6,7 @@ zuul:
   routes:
     myProductasd: #昵称 可随便写
 #      # /myProduct/product/list -> /product/product/list
-      path: /myProduct/**
+      path: /mymyProduct/**
       serviceId: PRODUCT
       # 敏感头
       sensitiveHeaders:
