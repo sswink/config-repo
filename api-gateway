@@ -1,0 +1,19 @@
+# 访问路由映射  /actuator/routes
+zuul:
+  routes:
+    myProductasd: #昵称 可随便写
+#      # /myProduct/product/list -> /product/product/list
+      path: /myProduct/**
+      serviceId: PRODUCT
+      # 敏感头
+      sensitiveHeaders:
+        - Set-Cookie
+        - Authorization
+#        - Cookie
+    # 简洁写法()
+#    product: /myProduct/**
+  # 排除路由
+#  ignored-patterns:
+#    - /myProduct/product/list
+#    - /product/product/list
+#    - /**/product/list
