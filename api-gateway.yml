@@ -1,5 +1,8 @@
 # 访问路由映射  /actuator/routes
 zuul:
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
   routes:
     myProductasd: #昵称 可随便写
 #      # /myProduct/product/list -> /product/product/list
@@ -17,3 +20,11 @@ zuul:
 #    - /myProduct/product/list
 #    - /product/product/list
 #    - /**/product/list
+# 请求超时时间
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
