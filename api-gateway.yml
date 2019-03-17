@@ -1,3 +1,7 @@
+spring:
+  redis:
+    host: localhost
+    pool: 6379
 # 访问路由映射  /actuator/routes
 zuul:
   # 全部服务敏感头
