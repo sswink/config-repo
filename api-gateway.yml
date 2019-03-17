@@ -4,15 +4,15 @@ zuul:
     connect-timeout-millis: 15000
     socket-timeout-millis: 60000
   routes:
+    # 全部服务敏感头
+    sensitiveHeaders:
+#      - Set-Cookie
+     - Authorization
+#      - Cookie
     myProductasd: #昵称 可随便写
 #      # /myProduct/product/list -> /product/product/list
       path: /myProduct/**
       serviceId: PRODUCT
-      # 敏感头
-      sensitiveHeaders:
-#        - Set-Cookie
-        - Authorization
-#        - Cookie
     # 简洁写法()
 #    product: /myProduct/**
   # 排除路由
