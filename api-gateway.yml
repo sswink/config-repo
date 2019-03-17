@@ -10,7 +10,7 @@ zuul:
       serviceId: PRODUCT
       # 敏感头
       sensitiveHeaders:
-        - Set-Cookie
+#        - Set-Cookie
         - Authorization
 #        - Cookie
     # 简洁写法()
