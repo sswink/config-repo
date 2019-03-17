@@ -1,15 +1,19 @@
 # 访问路由映射  /actuator/routes
 zuul:
+  # 全部服务敏感头
+  sensitiveHeaders:
+#    - Set-Cookie
+    - Authorization
+#    - Cookie
   host:
     connect-timeout-millis: 15000
     socket-timeout-millis: 60000
   routes:
-    # 全部服务敏感头
-    sensitiveHeaders:
-#      - Set-Cookie
-     - Authorization
-#      - Cookie
     myProductasd: #昵称 可随便写
+#     sensitiveHeaders:
+#     - Set-Cookie
+#     - Authorization
+#     - Cookie
 #      # /myProduct/product/list -> /product/product/list
       path: /myProduct/**
       serviceId: PRODUCT
